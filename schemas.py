@@ -21,7 +21,7 @@ class BookingOut(BookingCreate):
     created_at: str
 
     class Config:
-        from_attributes = True
+    orm_mode = True
 
 
 # ── Testimonials ──────────────────────────────────────────────────────────────
@@ -50,7 +50,7 @@ class TestimonialOut(BaseModel):
     created_at:  str
 
     class Config:
-        from_attributes = True
+    orm_mode = True
 
 
 # ── Portfolio ─────────────────────────────────────────────────────────────────
@@ -81,5 +81,5 @@ class PortfolioOut(BaseModel):
     is_featured: bool
     created_at:  str
 
-    class Config:
-        from_attributes = True
+   class Config:
+    orm_mode = True
